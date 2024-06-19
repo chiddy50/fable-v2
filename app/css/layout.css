@@ -1,0 +1,117 @@
+
+*{
+    box-sizing: border-box;
+}
+  
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+  }
+  
+  .right-sidebar, .left-sidebar {
+    position: fixed;
+    top: 80px; /* to avoid overlapping with the nav-bar */
+    bottom: 0;
+    width: 20%;
+    overflow: auto;
+  }
+  
+  .right-sidebar {
+    right: 0;
+  }
+  
+  .left-sidebar {
+    left: 0;
+  }
+  
+  .center {
+    /* position: absolute; */
+    top: 80px; /* to avoid overlapping with the nav-bar */
+    height: calc(100% - 80px); /* to fill the remaining height */
+  }
+
+
+
+
+
+
+
+
+
+
+
+main {    
+    /* background-image: url('images/scrimba-bg.jpeg'); */    
+}
+
+/* chatbot elements */
+
+.chatbot-container > * {
+    padding: .5em;   
+}
+
+/* stop ugly scroll bar on some browsers */
+.chatbot-conversation-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chatbot-conversation-container::-moz-scrollbar {
+    display: none;
+}
+
+.speech {
+    /* padding: 1em;
+    max-width: 240px; 
+    color: #fefefe;
+    min-width: 90%; */
+    border-radius: 15px; 
+    /* font-size: 1.07em; */
+}
+
+.speech:first-child {
+    margin-top: 2rem;
+}
+
+.speech-ai {
+	background: #334959;
+    border-top-left-radius: 0;
+    margin: 1.2em 1em 0 0; 
+}
+
+.speech-human {
+    margin: 1.2em 0 0 1em; 
+	background: #2f4f4f;
+    border-top-right-radius: 0; 
+}
+
+
+.send-btn-icon {
+    width: 20px;
+    display: block;
+}
+
+/* text */
+.sub-heading {
+    color: #999999;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+
